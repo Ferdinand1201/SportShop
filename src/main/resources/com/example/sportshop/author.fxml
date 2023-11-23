@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="500.0" prefWidth="258.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="255.0" prefWidth="239.0" styleClass="profile-layout" stylesheets="@../css/style.css" VBox.vgrow="NEVER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/author.png" />
+                     </image></ImageView>
+                  <Label text="Старцев Кирилл">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <VBox alignment="CENTER" spacing="15.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox spacing="10.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="Mobile Phone">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="+375(29) 810-86-70" textFill="#9a9a9a">
+                                 <font>
+                                    <Font name="Corbel" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label text="Work phone">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="+375(29) 810-86-70" textFill="#9a9a9a">
+                                 <font>
+                                    <Font name="Corbel" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <Label text="Email">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="kirill.star.1408@gmail.com" textFill="#9a9a9a">
+                                 <font>
+                                    <Font name="Corbel" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Биография">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <TextFlow VBox.vgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="   Я, Старцев Кирилл Павлович, родился в 2004 г в городе Полоцке, 14 августа. В возрасте 6 лет я пошёл в школу, где учился на высокие оценки. Когда пришло время переходить в профильный класс, я перевёлся в лицей города Новополоцка, где и провёл остаток школьной жизни, и был подготовлен к сдаче ценртрализованного тестирования. Результаты цт открыли мне дорогу в Витебский Государственный Техгологический Университет, или &quot;ВГТУ&quot;, где я по сей день изучаю программирование.">
+                     <font>
+                        <Font name="Corbel" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
