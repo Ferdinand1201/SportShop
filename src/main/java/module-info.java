@@ -2,6 +2,7 @@ module com.example.sportshop {
     requires javafx.controls;
     requires javafx.fxml;
 
+
     requires com.dlsc.formsfx;
 
     opens com.example.sportshop to javafx.fxml;

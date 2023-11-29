@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sportshop.Controllers.ShopFormController"
+            fx:controller="com.example.sportshop.Controllers.ProductDetailsController"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="963.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="963.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ShopController">
    <children>
       <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="227.0" spacing="25.0" style="-fx-background-color: #4cafd9;">
          <children>
@@ -22,14 +22,14 @@
             </Label>
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="7.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Спортивное питание">
+                  <Button fx:id="btn_sportPit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_sportPitOnClicked" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Спортивное питание">
                      <font>
                         <Font size="15.0" />
                      </font>
                      <padding>
                         <Insets bottom="10.0" top="10.0" />
                      </padding></Button>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Инвентарь">
+                  <Button fx:id="btn_inventory" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_inventoryOnClicked" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Инвентарь">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -37,7 +37,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </padding>
                   </Button>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Одежда">
+                  <Button fx:id="btn_cloth" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_clothOnClicked" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Одежда">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -55,25 +55,26 @@
          <children>
             <ScrollPane fitToHeight="true" fitToWidth="true" VBox.vgrow="ALWAYS">
                <content>
-                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;">
                      <children>
-                        <VBox alignment="CENTER" prefHeight="123.0" prefWidth="743.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                        <VBox alignment="CENTER" prefHeight="123.0" prefWidth="743.0" spacing="35.0" VBox.vgrow="ALWAYS">
                            <children>
-                              <Label text="Спотивное питание">
+                              <Label fx:id="lbl_title" text="Спортивное питание">
                                  <font>
-                                    <Font name="System Bold" size="19.0" />
+                                    <Font name="System Bold" size="23.0" />
                                  </font>
                               </Label>
-                              <VBox VBox.vgrow="ALWAYS" />
+                              <VBox fx:id="itemList" spacing="20.0" VBox.vgrow="ALWAYS" />
                            </children>
                            <padding>
                               <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                            </padding>
                         </VBox>
-                        <HBox spacing="40.0" style="-fx-background-color: #2f6f8a;">
+                        <HBox style="-fx-background-color: #2f6f8a;">
                            <children>
                               <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
                                  <children>
+                                    <Region HBox.hgrow="ALWAYS" />
                                     <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../images/logos/nike.png" />
@@ -96,15 +97,16 @@
                                           <Image url="@../images/logos/asics.png" />
                                        </image>
                                     </ImageView>
+                                    <Region HBox.hgrow="ALWAYS" />
                                  </children>
                               </HBox>
                               <VBox alignment="CENTER" minWidth="160.0" spacing="10.0">
                                  <children>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #0d4c66; -fx-text-fill: white;" text="Об авторе">
+                                    <Button fx:id="btn_auth" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_authOnClicked" style="-fx-background-color: #0d4c66; -fx-text-fill: white;" text="Об авторе">
                                        <font>
                                           <Font size="14.0" />
                                        </font></Button>
-                                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #0d4c66; -fx-text-fill: white;" text="Сообщить о проблеме">
+                                    <Button fx:id="btn_problem" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_problemOnClicked" style="-fx-background-color: #0d4c66; -fx-text-fill: white;" text="Сообщить о проблеме">
                                        <font>
                                           <Font size="14.0" />
                                        </font></Button>
