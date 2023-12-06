@@ -59,7 +59,7 @@
                                                 </Label>
                                              </children>
                                           </HBox>
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #3c9fc9;" text="Подробнее" textFill="WHITE" />
+                                          <Button fx:id="btn_details" mnemonicParsing="false" onMouseClicked="#btn_detailsOnClicked" style="-fx-background-color: #3c9fc9;" text="Подробнее" textFill="WHITE" />
                                        </children>
                                     </VBox>
                                  </children>

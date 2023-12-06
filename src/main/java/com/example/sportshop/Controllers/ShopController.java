@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import com.example.sportshop.Model.ProductItem;
+import com.example.sportshop.Model.SportFoodItem;
 import com.example.sportshop.utils.FormUtil;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,8 +32,8 @@ public class ShopController implements Initializable {
             new ProductItem("/com/example/images/itemImg/dumbells.PNG", "Беговые кроссовки 44 размера", "Кроссовки adidas", "300" )
     ));
 
-    private List<ProductItem> sportPitList = new ArrayList<>(Arrays.asList(
-            new ProductItem("/com/example/images/itemImg/wheyProtein.PNG", "Сывороточный протеин 90 г", "Whey protein ", "90" )
+    private List<SportFoodItem> sportPitList = new ArrayList<>(Arrays.asList(
+            new SportFoodItem("/com/example/images/itemImg/wheyProtein.PNG", "Сывороточный протеин 90 г", "Whey protein ", "90", "Протеин", "90", "сывороточный протеин", "90, 0, 10")
 
     ));
 

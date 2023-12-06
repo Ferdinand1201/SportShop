@@ -6,6 +6,8 @@ public class ProductItem {
     private String name;
     private String price;
 
+
+
     public ProductItem(String img, String description, String name, String price) {
         this.img = img;
         this.description = description;

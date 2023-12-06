@@ -10,7 +10,7 @@ import java.io.IOException;
 public class SportShopApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SportShopApp.class.getResource("shop.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SportShopApp.class.getResource("error-form.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1050, 640);
         stage.setTitle("Спорт магазин");
         stage.setScene(scene);

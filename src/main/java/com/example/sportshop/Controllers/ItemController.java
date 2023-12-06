@@ -1,17 +1,24 @@
 package com.example.sportshop.Controllers;
 
 import com.example.sportshop.Model.ProductItem;
+import com.example.sportshop.utils.FormUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.control.Button;
+
+import java.io.IOException;
+
 
 public class ItemController {
 
 
-
     @FXML
     private ImageView img_item;
+    @FXML
+    private Button btn_details;
 
     @FXML
     private Label lbl_description;
@@ -21,6 +28,7 @@ public class ItemController {
 
     @FXML
     private Label lbl_price;
+
 
     public void setData (ProductItem productItem){
         Image imgItem = new Image(getClass().getResourceAsStream(productItem.getImg()));
@@ -33,6 +41,17 @@ public class ItemController {
         lbl_price.setText(productItem.getPrice());
 
     }
+
+    @FXML
+    void btn_detailsOnClicked(MouseEvent event) throws IOException {
+
+FormUtil.loadProductDetails(btn_details, "Подробнее", productItem);
+
+    }
+
+
+
+
 
 
 }
