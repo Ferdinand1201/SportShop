@@ -44,7 +44,7 @@ public class ItemController {
 
     @FXML
     void btn_detailsOnClicked(MouseEvent event) throws IOException {
-
+        ProductItem productItem = (ProductItem) img_item.getUserData();
 FormUtil.loadProductDetails(btn_details, "Подробнее", productItem);
 
     }
