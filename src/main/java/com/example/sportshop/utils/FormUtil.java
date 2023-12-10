@@ -29,10 +29,12 @@ public class FormUtil {
         stage.show();
     }
     public static void loadProductDetails (Button btn, String title, ProductItem productItem) throws IOException {
+        -
         Stage oldStage = (Stage) btn.getScene().getWindow();
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ProductDetailsController.class.getResource("/com/example/sportshop/Controllers/ProductDetailsController.java"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ProductDetailsController.class.getResource("/com/example/sportshop/product-details.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+
         ((ProductDetailsController) fxmlLoader.getController()).setData(productItem);
 
         Stage stage = new Stage();
@@ -41,9 +43,6 @@ public class FormUtil {
         stage.setTitle(title);
         stage.setScene(scene);
         stage.show();
-
-
-
     }
 
 

@@ -15,6 +15,7 @@ import java.io.IOException;
 public class ItemController {
 
 
+
     @FXML
     private ImageView img_item;
     @FXML
@@ -29,9 +30,14 @@ public class ItemController {
     @FXML
     private Label lbl_price;
 
+    private ProductItem productItem;
+
+
 
     public void setData (ProductItem productItem){
+        this.productItem = productItem;
         Image imgItem = new Image(getClass().getResourceAsStream(productItem.getImg()));
+
         img_item.setImage(imgItem);
 
         lbl_name.setText(productItem.getName());
@@ -44,8 +50,8 @@ public class ItemController {
 
     @FXML
     void btn_detailsOnClicked(MouseEvent event) throws IOException {
-        ProductItem productItem = (ProductItem) img_item.getUserData();
-FormUtil.loadProductDetails(btn_details, "Подробнее", productItem);
+
+        FormUtil.loadProductDetails(btn_details, "Подробнее", this.productItem);
 
     }
 

@@ -10,7 +10,9 @@ public class ProductDetailsController {
 
 
     public void setData(ProductItem productItem){
-        System.out.println(productItem);
+
+
+
 
     }
 
