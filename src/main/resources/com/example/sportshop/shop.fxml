@@ -37,7 +37,7 @@
                         <Insets bottom="10.0" top="10.0" />
                      </padding>
                   </Button>
-                  <Button fx:id="btn_cloth" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_clothOnClicked" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Одежда">
+                  <Button fx:id="btn_cloth" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#btn_clothOnClicked" style="-fx-background-color: #3c9fc9; -fx-text-fill: white;" text="Обувь">
                      <font>
                         <Font size="15.0" />
                      </font>

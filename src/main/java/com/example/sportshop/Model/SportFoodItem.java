@@ -42,7 +42,7 @@ public class SportFoodItem extends ProductItem {
         this.protFatCarbs = protFatCarbs;
     }
 
-    public SportFoodItem(String img, String description, String name, String price, String type, String weight, String compound, String protFatCarbs) {
+    public SportFoodItem( String img, String description, String name, String price, String type, String weight, String compound, String protFatCarbs) {
         super(img, description, name, price);
         this.type = type;
         this.weight = weight;

@@ -19,6 +19,8 @@ public class SportClothItem extends ProductItem {
         this.material = material;
     }
 
+
+
     private String material;
 
     private String type;
@@ -37,7 +39,7 @@ public class SportClothItem extends ProductItem {
 
     private String color;
 
-    public SportClothItem(String img, String description, String name, String price, String color, String size, String type, String material) {
+    public SportClothItem( String img, String description, String name, String price, String color, String size, String type, String material) {
         super(img, description, name, price);
         this.color = color;
         this.size = size;

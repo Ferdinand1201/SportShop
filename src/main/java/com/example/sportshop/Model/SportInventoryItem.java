@@ -31,8 +31,8 @@ public class SportInventoryItem extends ProductItem {
         this.material = material;
     }
 
-    public SportInventoryItem(String img, String description, String name, String price, String type, String weight, String material) {
-        super(img, description, name, price);
+    public SportInventoryItem( String img, String description, String name, String price, String type, String weight, String material) {
+        super( img, description, name, price);
         this.type = type;
         this.weight = weight;
         this.material = material;

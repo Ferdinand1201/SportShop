@@ -45,7 +45,7 @@
                                  <children>
                                     <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
                                        <children>
-                                          <HBox alignment="CENTER" spacing="5.0">
+                                          <HBox alignment="CENTER" minWidth="-Infinity" prefWidth="100.0" spacing="5.0">
                                              <children>
                                                 <Label fx:id="lbl_price" text="10">
                                                    <font>
@@ -59,7 +59,7 @@
                                                 </Label>
                                              </children>
                                           </HBox>
-                                          <Button fx:id="btn_details" mnemonicParsing="false" onMouseClicked="#btn_detailsOnClicked" style="-fx-background-color: #3c9fc9;" text="Подробнее" textFill="WHITE" />
+                                          <Button fx:id="btn_details" mnemonicParsing="false" onMouseClicked="#btn_detailsOnClicked" prefWidth="100.0" style="-fx-background-color: #3c9fc9;" text="Подробнее" textFill="WHITE" />
                                        </children>
                                     </VBox>
                                  </children>

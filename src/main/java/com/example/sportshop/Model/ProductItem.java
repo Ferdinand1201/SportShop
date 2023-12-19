@@ -1,6 +1,7 @@
 package com.example.sportshop.Model;
 
 public class ProductItem {
+
     private String img;
     private String description;
     private String name;
@@ -13,6 +14,7 @@ public class ProductItem {
         this.description = description;
         this.name = name;
         this.price = price;
+
     }
 
     public String getImg() {
