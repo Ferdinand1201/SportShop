@@ -1,4 +1,8 @@
-.profile-layout{
-  -fx-background-color:  #4afd9;
-  -fx-background-radius: 0 0 50 50;
+.profile-layout {
+  -fx-background-color: #3e8e41; /* Verde închis, mai elegant */
+  -fx-background-radius: 20px; /* Colțuri rotunjite uniform */
+  -fx-padding: 15px; /* Adăugăm puțin padding pentru un aspect mai aerisit */
+  -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 2); /* Efect de umbră subtil */
+  -fx-border-color: #2d6b30; /* Border în ton cu fundalul, pentru un contur mai rafinat */
+  -fx-border-width: 2px; /* Grosime border */
 }

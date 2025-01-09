@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="1060.0" spacing="5.0" style="-fx-background-color: #4cafd9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ErrorFormController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="1060.0" spacing="10.0" style="-fx-background-color: #e0f7fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ErrorFormController">
    <children>
-      <VBox alignment="CENTER" maxWidth="430.0" spacing="30.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+      <VBox alignment="CENTER" maxWidth="430.0" spacing="30.0" style="-fx-background-radius: 10; -fx-background-color: white; -fx-drop-shadow-color: rgba(0, 0, 0, 0.1); -fx-drop-shadow-radius: 10; -fx-drop-shadow-offset: 5 5;">
          <children>
             <HBox alignment="CENTER" VBox.vgrow="NEVER">
                <children>
-                  <Label text="Сообщить о проблеме">
+                  <Label text="Raportează o problemă" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #00796b;">
                      <font>
                         <Font name="System Bold" size="21.0" />
                      </font>
@@ -24,22 +24,22 @@
             </HBox>
             <VBox spacing="20.0">
                <children>
-                  <VBox spacing="5.0">
+                  <VBox spacing="10.0">
                      <children>
-                        <Label text="Email" />
-                        <TextField fx:id="inpt_email" />
+                        <Label text="Email" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #00796b;" />
+                        <TextField fx:id="inpt_email" promptText="Introduceti emailul" style="-fx-border-color: #00796b; -fx-border-width: 1.5; -fx-background-color: #f0f0f0;" />
                      </children>
                   </VBox>
-                  <VBox spacing="5.0">
+                  <VBox spacing="10.0">
                      <children>
-                        <Label text="Сообщение" />
-                        <TextArea fx:id="inpt_message" prefHeight="200.0" prefWidth="200.0" wrapText="true" />
+                        <Label text="Mesaj" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #00796b;" />
+                        <TextArea fx:id="inpt_message" prefHeight="150.0" prefWidth="300.0" wrapText="true" promptText="Scrie un mesaj..." style="-fx-border-color: #00796b; -fx-border-width: 1.5; -fx-background-color: #f0f0f0;" />
                      </children>
                   </VBox>
-                  <HBox alignment="CENTER" spacing="15.0">
+                  <HBox alignment="CENTER" spacing="20.0">
                      <children>
-                        <Button fx:id="btn_cancel" maxWidth="130.0" mnemonicParsing="false" onMouseClicked="#btn_cancelOnClicked" prefWidth="130.0" style="-fx-background-color: #f53d3d;" text="Отмена" textFill="WHITE" />
-                        <Button fx:id="btn_submit" maxWidth="130.0" mnemonicParsing="false" onMouseClicked="#btn_submitOnClicked" prefWidth="130.0" style="-fx-background-color: #3c9fc9;" text="Отправить" textFill="WHITE" />
+                        <Button fx:id="btn_cancel" maxWidth="130.0" mnemonicParsing="false" onMouseClicked="#btn_cancelOnClicked" prefWidth="130.0" style="-fx-background-color: #f44336; -fx-font-size: 16px; -fx-padding: 10 20;" text="Anulare" textFill="WHITE" />
+                        <Button fx:id="btn_submit" maxWidth="130.0" mnemonicParsing="false" onMouseClicked="#btn_submitOnClicked" prefWidth="130.0" style="-fx-background-color: #00796b; -fx-font-size: 16px; -fx-padding: 10 20;" text="Trimite" textFill="WHITE" />
                      </children>
                   </HBox>
                </children>

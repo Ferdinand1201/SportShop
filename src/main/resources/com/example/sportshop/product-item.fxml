@@ -9,70 +9,89 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="130.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ItemController">
+<VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="130.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ItemController">
    <children>
       <HBox prefHeight="200.0" prefWidth="500.0">
          <children>
-            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #f2f2f2; -fx-border-width: 1; -fx-border-color: #c9c9c9; -fx-border-radius: 7; -fx-background-radius: 7;">
+
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: #f2f2f2; -fx-border-width: 1; -fx-border-color: #c9c9c9; -fx-border-radius: 10px; -fx-background-radius: 10px;">
                <children>
                   <ImageView fx:id="img_item" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </VBox>
+
+
             <VBox HBox.hgrow="ALWAYS">
                <children>
                   <VBox VBox.vgrow="ALWAYS">
                      <VBox.margin>
-                        <Insets left="10.0" />
+                        <Insets left="15.0" />
                      </VBox.margin>
                      <children>
                         <HBox VBox.vgrow="ALWAYS">
                            <children>
-                              <VBox maxWidth="1.7976931348623157E308" spacing="7.0" HBox.hgrow="ALWAYS">
+
+                              <VBox maxWidth="1.7976931348623157E308" spacing="10.0" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Label fx:id="lbl_name" text="Название">
+                                    <Label fx:id="lbl_name" text="Denumire">
                                        <font>
-                                          <Font name="System Bold" size="19.0" />
+                                          <Font name="System Bold" size="20.0" />
                                        </font>
+                                       <style>
+                                          -fx-text-fill: #333333;
+                                       </style>
                                     </Label>
-                                    <Label fx:id="lbl_description" text="Label">
+                                    <Label fx:id="lbl_description" text="Descriere scurtă a produsului">
                                        <font>
-                                          <Font size="15.0" />
+                                          <Font size="16.0" />
                                        </font>
+                                       <style>
+                                          -fx-text-fill: #777777;
+                                       </style>
                                     </Label>
                                  </children>
                               </VBox>
+
+
                               <VBox maxHeight="1.7976931348623157E308">
                                  <children>
-                                    <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                                    <VBox alignment="CENTER" spacing="15.0" VBox.vgrow="ALWAYS">
                                        <children>
                                           <HBox alignment="CENTER" minWidth="-Infinity" prefWidth="100.0" spacing="5.0">
                                              <children>
-                                                <Label fx:id="lbl_price" text="10">
+                                                <Label fx:id="lbl_price" text="Label">
                                                    <font>
                                                       <Font name="System Bold" size="18.0" />
                                                    </font>
+                                                   <style>
+                                                      -fx-text-fill: #333333;
+                                                   </style>
                                                 </Label>
-                                                <Label text="р">
+                                                <Label text="RON">
                                                    <font>
                                                       <Font name="System Bold" size="18.0" />
                                                    </font>
+                                                   <style>
+                                                      -fx-text-fill: #333333;
+                                                   </style>
                                                 </Label>
                                              </children>
                                           </HBox>
-                                          <Button fx:id="btn_details" mnemonicParsing="false" onMouseClicked="#btn_detailsOnClicked" prefWidth="100.0" style="-fx-background-color: #3c9fc9;" text="Подробнее" textFill="WHITE" />
+
+
+                                          <Button fx:id="btn_details" mnemonicParsing="false" onMouseClicked="#btn_detailsOnClicked" prefWidth="100.0" style="-fx-background-color: #3c9fc9; -fx-text-fill: white; -fx-background-radius: 6px; padding: 8px 16px;" text="Detalii" />
                                        </children>
                                     </VBox>
                                  </children>
                               </VBox>
                            </children>
-                           <padding>
-                              <Insets bottom="10.0" left="10.0" top="10.0" />
-                           </padding>
                         </HBox>
-                        <Separator />
+
+
+                        <Separator style="-fx-background-color: #c9c9c9;" />
                      </children>
                      <padding>
-                        <Insets right="10.0" />
+                        <Insets right="15.0" />
                      </padding>
                   </VBox>
                </children>
@@ -80,6 +99,7 @@
                   <Insets />
                </HBox.margin>
             </VBox>
-         </children></HBox>
+         </children>
+      </HBox>
    </children>
 </VBox>

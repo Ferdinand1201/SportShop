@@ -1,3 +1,5 @@
+
+
 package com.example.sportshop;
 
 import javafx.application.Application;
@@ -9,13 +11,19 @@ import java.io.IOException;
 
 public class SportShopApp extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SportShopApp.class.getResource("shop.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1050, 640);
-        stage.setTitle("Спорт магазин");
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage stage) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(SportShopApp.class.getResource("shop.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1050, 640);
+            stage.setTitle("Magazin de sport");
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        }
     }
+
 
     public static void main(String[] args) {
         launch();

@@ -12,97 +12,87 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="790.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ProductDetailsController">
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="790.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.ProductDetailsController">
    <content>
-      <HBox style="-fx-background-color: white;">
+      <HBox style="-fx-background-color: #ffffff; border-radius: 12px; padding: 20px;">
          <children>
-            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 10; -fx-border-color: #c9c9c9; -fx-border-radius: 10;">
+
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 12px; -fx-border-color: #dcdcdc; -fx-border-radius: 12px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                <children>
                   <ImageView fx:id="img_Description" fitHeight="398.0" fitWidth="398.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </VBox>
-            <VBox spacing="20.0" HBox.hgrow="ALWAYS">
-               <children>
-                  <Label fx:id="lbl_Name" text="Label">
-                     <font>
-                        <Font name="System Bold" size="27.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="lbl_Price" text="Label">
-                     <font>
-                        <Font name="System Bold" size="21.0" />
-                     </font>
-                  </Label>
-                  <Button fx:id="btn_buy" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btn_buyOnClicked" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3c9fc9; -fx-background-radius: 4;" text="Купить" textAlignment="CENTER" textFill="WHITE">
-                     <font>
-                        <Font size="17.0" />
-                     </font></Button>
-                  <TextFlow fx:id="txt_flow">
-                     <children>
-                        <Text fx:id="txt_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
-                           <font>
-                              <Font size="15.0" />
-                           </font></Text>
-                     </children>
-                  </TextFlow>
-                  <VBox alignment="CENTER">
-                     <children>
-                        <Label alignment="CENTER" text="Характеристики">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                     </children>
+
+
+            <VBox spacing="20.0" HBox.hgrow="ALWAYS" style="padding-left: 20px;">
+
+               <Label fx:id="lbl_Name" text="Label" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #333333;" />
+
+
+               <Label fx:id="lbl_Price" text="RON" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #3c9fc9;" />
+
+
+               <Button fx:id="btn_buy" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#btn_buyOnClicked" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #3c9fc9; -fx-background-radius: 6; -fx-text-fill: white; font-size: 18px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 2); transition: all 0.3s ease;" text="Cumpără" textAlignment="CENTER">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Button>
+
+
+               <TextFlow fx:id="txt_flow" style="padding-top: 10px;">
+                  <children>
+                     <Text fx:id="txt_text" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" style="-fx-font-size: 15px; color: #777;" />
+                  </children>
+               </TextFlow>
+
+
+               <VBox alignment="CENTER" spacing="15.0">
+                  <Label text="Specificații" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;" />
+                  <VBox alignment="CENTER" prefHeight="159.0" prefWidth="385.0" spacing="12.0">
+
+                     <Separator prefWidth="200.0" style="-fx-background-color: #e0e0e0;" />
+                     <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                        <children>
+                           <Label fx:id="lbl_1parName" text="----" style="-fx-font-size: 16px; color: #555;" />
+                           <Label fx:id="lbl_1par" text="----" style="-fx-font-size: 16px; color: #555;" />
+                        </children>
+                     </HBox>
+                     <Separator prefWidth="200.0" style="-fx-background-color: #e0e0e0;" />
+
+
+                     <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                        <children>
+                           <Label fx:id="lbl_2parName" text="----" style="-fx-font-size: 16px; color: #555;" />
+                           <Label fx:id="lbl_2par" text="----" style="-fx-font-size: 16px; color: #555;" />
+                        </children>
+                     </HBox>
+                     <Separator prefWidth="200.0" style="-fx-background-color: #e0e0e0;" />
+
+
+                     <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                        <children>
+                           <Label fx:id="lbl_3parName" text="----" style="-fx-font-size: 16px; color: #555;" />
+                           <TextFlow prefHeight="200.0" prefWidth="200.0">
+                              <children>
+                                 <Text fx:id="txt_textFlow" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" style="-fx-font-size: 15px; color: #555;" />
+                              </children>
+                           </TextFlow>
+                        </children>
+                     </HBox>
+                     <Separator prefWidth="200.0" style="-fx-background-color: #e0e0e0;" />
+
+
+                     <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                        <children>
+                           <Label fx:id="lbl_4parName" style="-fx-font-size: 16px; color: #555;" />
+                           <Label fx:id="lbl_4par" style="-fx-font-size: 16px; color: #555;" />
+                        </children>
+                     </HBox>
+                     <Separator fx:id="separator" prefWidth="200.0" style="-fx-background-color: #e0e0e0;" />
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="159.0" prefWidth="385.0" spacing="10.0">
-                     <children>
-                        <Separator prefWidth="200.0" style="-fx-background-color: #cfd1d1;" />
-                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
-                           <children>
-                              <Label fx:id="lbl_1parName" text="----" />
-                              <Label fx:id="lbl_1par" text="----" />
-                           </children>
-                        </HBox>
-                        <Separator prefWidth="200.0" style="-fx-background-color: #cfd1d1;" />
-                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
-                           <children>
-                              <Label fx:id="lbl_2parName" text="----" />
-                              <Label fx:id="lbl_2par" text="----" />
-                           </children>
-                        </HBox>
-                        <Separator prefWidth="200.0" style="-fx-background-color: #cfd1d1;" />
-                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
-                           <children>
-                              <Label fx:id="lbl_3parName" text="----" />
-                              <TextFlow prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <Text fx:id="txt_textFlow" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-                                 </children>
-                              </TextFlow>
-                           </children>
-                        </HBox>
-                        <Separator prefWidth="200.0" style="-fx-background-color: #cfd1d1;" />
-                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
-                           <children>
-                              <Label fx:id="lbl_4parName" />
-                              <Label fx:id="lbl_4par" />
-                           </children>
-                        </HBox>
-                        <Separator fx:id="separator" prefWidth="200.0" style="-fx-background-color: #cfd1d1;" />
-                     </children>
-                  </VBox>
-               </children>
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-               <padding>
-                  <Insets left="15.0" right="15.0" />
-               </padding>
+               </VBox>
             </VBox>
          </children>
-         <padding>
-            <Insets bottom="15.0" left="15.0" top="15.0" />
-         </padding>
       </HBox>
    </content>
 </ScrollPane>

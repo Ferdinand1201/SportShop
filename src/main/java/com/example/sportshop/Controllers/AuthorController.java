@@ -12,7 +12,7 @@ public class AuthorController {
 
     @FXML
     void btn_backOnClicked(MouseEvent event) throws IOException {
-        FormUtil.loadAndHide(btn_back,"/com/example/sportshop/shop.fxml","Спортивный магазин");
+        FormUtil.loadAndHide(btn_back,"/com/example/sportshop/shop.fxml","Sport Shop");
 
     }
 

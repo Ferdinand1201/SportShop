@@ -51,7 +51,7 @@ public class ItemController {
     @FXML
     void btn_detailsOnClicked(MouseEvent event) throws IOException {
 
-        FormUtil.loadProductDetails(btn_details, "Подробнее", this.productItem);
+        FormUtil.loadProductDetails(btn_details, "Mai multe detalii", this.productItem);
 
     }
 

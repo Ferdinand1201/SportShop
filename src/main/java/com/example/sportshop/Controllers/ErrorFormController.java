@@ -28,7 +28,7 @@ public class ErrorFormController {
 
     @FXML
     void btn_cancelOnClicked(MouseEvent event) throws IOException {
-        FormUtil.loadAndHide(btn_cancel, "/com/example/sportshop/shop.fxml", "Спортивный магазин");
+        FormUtil.loadAndHide(btn_cancel, "/com/example/sportshop/shop.fxml", "Sport Shop");
     }
 
     @FXML
@@ -38,19 +38,19 @@ public class ErrorFormController {
             if (inpt_email.getText().matches("^([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$")) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
-                alert.setTitle("Information");
+                alert.setTitle("Informații");
                 alert.setHeaderText(null);
-                alert.setContentText("Сообщение отправлено");
+                alert.setContentText("Mesaj trimis");
 
                 alert.showAndWait();
-                FormUtil.loadAndHide(btn_submit, "/com/example/sportshop/shop.fxml", "Спортивный магазин");
+                FormUtil.loadAndHide(btn_submit, "/com/example/sportshop/shop.fxml", "Sport Shop");
             }
             else {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
-                alert.setTitle("Information");
+                alert.setTitle("Informații");
                 alert.setHeaderText(null);
-                alert.setContentText("Неправильный ввод Email");
+                alert.setContentText("E-mail incorect");
                 alert.showAndWait();
             }
 
@@ -59,9 +59,9 @@ public class ErrorFormController {
         else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
-            alert.setTitle("Information");
+            alert.setTitle("Informații");
             alert.setHeaderText(null);
-            alert.setContentText("Не заполнены все поля");
+            alert.setContentText("Nu sunt completate toate câmpurile");
             alert.showAndWait();
         }
 

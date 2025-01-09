@@ -72,12 +72,12 @@ public class ProductDetailsController {
         img_Description.setImage(imgDetails);
         lbl_Name.setText(productItem.getName());
         txt_text.setText(productItem.getDescription());
-        lbl_Price.setText(productItem.getPrice() + "р");
+        lbl_Price.setText(productItem.getPrice() + " RON");
         if(productItem instanceof SportFoodItem){
-            lbl_1parName.setText("Тип продукта:");
-            lbl_2parName.setText("Вес продукта:");
-            lbl_3parName.setText("Состав продукта:");
-            lbl_4parName.setText("БЖУ продукта:");
+            lbl_1parName.setText("Tip:");
+            lbl_2parName.setText("Greutate:");
+            lbl_3parName.setText("Compoziție:");
+            lbl_4parName.setText("Proteine, Glucide, Săruri (/100g):");
             lbl_1par.setText(((SportFoodItem) productItem).getType());
             lbl_2par.setText(((SportFoodItem) productItem).getWeight());
             txt_textFlow.setText(((SportFoodItem) productItem).getCompound());
@@ -85,29 +85,25 @@ public class ProductDetailsController {
 
         }
         else if(productItem instanceof SportClothItem){
-            lbl_1parName.setText("Цвет продукта:");
-            lbl_2parName.setText("Размер продукта:");
-            lbl_3parName.setText("Тип продукта:");
-            lbl_4parName.setText("Материал продукта:");
+            lbl_1parName.setText("Culoare:");
+            lbl_2parName.setText("Mărime:");
+            lbl_3parName.setText("Tip:");
+            lbl_4parName.setText("Material:");
             lbl_1par.setText(((SportClothItem) productItem).getColor());
             lbl_2par.setText(((SportClothItem) productItem).getSize());
             txt_textFlow.setText(((SportClothItem) productItem).getType());
             lbl_4par.setText(((SportClothItem) productItem).getMaterial());
-
-
-
-
         }
         else if (productItem instanceof SportInventoryItem){
-            lbl_1parName.setText("Тип:");
-            lbl_2parName.setText("Вес:");
-            lbl_3parName.setText("Материал:");
+            lbl_1parName.setText("Tip:");
+            lbl_2parName.setText("Greutate:");
+            lbl_3parName.setText("Material:");
 
             lbl_1par.setText(((SportInventoryItem) productItem).getType());
             lbl_2par.setText(((SportInventoryItem) productItem).getWeight());
             txt_textFlow.setText(((SportInventoryItem) productItem).getMaterial());
             separator.setVisible(false);
-    }
+        }
 
 
     }
@@ -115,9 +111,9 @@ public class ProductDetailsController {
     void btn_buyOnClicked(MouseEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
 
-        alert.setTitle("Успех!");
+        alert.setTitle("Stare");
         alert.setHeaderText(null);
-        alert.setContentText("Покупка совершена");
+        alert.setContentText("Achiziție realizată");
         alert.showAndWait();
     }
 

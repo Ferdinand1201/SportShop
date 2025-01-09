@@ -14,55 +14,44 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sportshop.Controllers.AuthorController">
    <left>
-      <VBox prefHeight="500.0" prefWidth="258.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="500.0" prefWidth="258.0" style="-fx-background-color: #f4f4f4;" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="CENTER" prefHeight="255.0" prefWidth="239.0" style="-fx-background-color: #4cafd9; -fx-background-radius: 0 0 50 50;" VBox.vgrow="NEVER">
+            <VBox alignment="CENTER" prefHeight="255.0" prefWidth="239.0" style="-fx-background-color: #005f6b; -fx-background-radius: 20px;" VBox.vgrow="NEVER">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/author.jpg" />
-                     </image></ImageView>
-                  <Label text="Старцев Кирилл" textFill="#fcfcfc">
+                     </image>
+                  </ImageView>
+                  <Label text="Ferdinand Tobias Trefil" textFill="#fcfcfc">
                      <VBox.margin>
-                        <Insets />
+                        <Insets top="10.0" />
                      </VBox.margin>
                      <font>
-                        <Font size="23.0" />
+                        <Font size="22.0" />
                      </font>
                   </Label>
-               </children></VBox>
+               </children>
+            </VBox>
             <VBox alignment="CENTER" spacing="15.0" VBox.vgrow="ALWAYS">
                <children>
                   <VBox spacing="10.0">
                      <children>
                         <VBox>
                            <children>
-                              <Label text="Mobile Phone">
+                              <Label text="Mobil">
                                  <font>
                                     <Font name="Arial Bold" size="20.0" />
                                  </font>
                               </Label>
-                              <Label text="+375(29) 810-86-70" textFill="#9a9a9a">
+                              <Label text="+40735762222" textFill="#555555">
                                  <font>
-                                    <Font name="Corbel" size="20.0" />
+                                    <Font name="Corbel" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                         </VBox>
-                        <VBox>
-                           <children>
-                              <Label text="Work phone">
-                                 <font>
-                                    <Font name="Arial Bold" size="20.0" />
-                                 </font>
-                              </Label>
-                              <Label text="+375(29) 810-86-70" textFill="#9a9a9a">
-                                 <font>
-                                    <Font name="Corbel" size="20.0" />
-                                 </font>
-                              </Label>
-                           </children>
-                        </VBox>
+
                         <VBox>
                            <children>
                               <Label text="Email">
@@ -70,9 +59,9 @@
                                     <Font name="Arial Bold" size="20.0" />
                                  </font>
                               </Label>
-                              <Label text="kirill.star.1408@gmail.com" textFill="#9a9a9a">
+                              <Label text="ferdinand.trefil03@e-uvt.ro" textFill="#555555">
                                  <font>
-                                    <Font name="Corbel" size="19.0" />
+                                    <Font name="Corbel" size="18.0" />
                                  </font>
                               </Label>
                            </children>
@@ -92,14 +81,14 @@
          <children>
             <VBox spacing="30.0">
                <children>
-                  <Label text="Биография">
+                  <Label text="Biografie">
                      <font>
                         <Font name="System Bold" size="32.0" />
                      </font>
                   </Label>
                   <TextFlow>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="   Я, Старцев Кирилл Павлович, родился в 2004 г в городе Полоцке, 14 августа. В возрасте 6 лет я пошёл в школу, где учился на высокие оценки. Когда пришло время переходить в профильный класс, я перевёлся в лицей города Новополоцка, где и провёл остаток школьной жизни, и был подготовлен к сдаче ценртрализованного тестирования. Результаты цт открыли мне дорогу в Витебский Государственный Техгологический Университет, или &quot;ВГТУ&quot;, где я по сей день изучаю программирование.">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mă numesc Ferdinand- Tobias Trefil, am 21 de ani și sunt student în anul III la Informatică. Îmi place să joc tenis, să călătoresc și să învăț lucruri noi.">
                            <font>
                               <Font name="Corbel" size="20.0" />
                            </font>
@@ -111,7 +100,7 @@
             <Region VBox.vgrow="ALWAYS" />
             <VBox alignment="CENTER">
                <children>
-                  <Button fx:id="btn_back" maxWidth="130.0" mnemonicParsing="false" onMouseClicked="#btn_backOnClicked" style="-fx-background-color: #f53d3d;" text="Назад" textFill="WHITE" />
+                  <Button fx:id="btn_back" maxWidth="130.0" mnemonicParsing="false" onMouseClicked="#btn_backOnClicked" style="-fx-background-color: #f53d3d; -fx-font-size: 16px; -fx-padding: 10 20;" text="Înapoi" textFill="WHITE" />
                </children>
             </VBox>
          </children>
